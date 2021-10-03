@@ -9,22 +9,26 @@ let toDos = [];
 function saveToDos(){
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
     // JSON.stringfy: 데이터를 string으로 저장하고 싶을 때 사용
-
 }
 
 function deleteToDo(event){ //event는 어떤 버튼이 클릭 됬는지 알려준다
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((item) => item.id !== parseInt(li.id));
+    //데이터 형에 주의할 것!
+    saveToDos();   
 }
 
 function paintToDo(new_todo){
     const li = document.createElement("li"); 
+    li.id = new_todo.id;
     /* 
     "li"는 li여야만 한다
     변수 li는 이름 뭐여도 상관 없다!
     */
     const span = document.createElement("span");
-    span.innerText = new_todo;
+    span.innerText = new_todo.text;
+    span.classList.add("todo_font");
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
@@ -35,10 +39,14 @@ function paintToDo(new_todo){
 
 function handleToDoSumbmit(event){
     event.preventDefault();
-    const new_todo = toDo_input.value;
+    const new_todo = '=> ' + toDo_input.value + ' ';
     toDo_input.value = "";
-    toDos.push(new_todo);
-    paintToDo(new_todo);
+    const new_todo_obj = {
+        text: new_todo,
+        id: Date.now(),
+    };
+    toDos.push(new_todo_obj);
+    paintToDo(new_todo_obj);
     saveToDos();
 }
 
