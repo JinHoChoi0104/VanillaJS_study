@@ -5,19 +5,28 @@ body {
     background-color: #051320;
     text-align: center;  
 }
+
 /*Class*/
 .clock {
-    font-size: 250%;
-    color: rgb(255, 255, 255);
+}
+#clock_block{
+  margin: 30px 0px 10px;
+}
+.title_font{
+  font-weight: bolder;
+  font-size: 300%;
+  color: white;
 }
 .greeting {
-    font-size: 400%;
-    color: wheat;
+    margin: 10px;
+
 }
 .quotes {
-    font-style:unset;
-    font-size: 150%;
-    color: wheat;
+
+  font-weight: bolder;
+  font-style:unset;
+    font-size: 100%;
+    color: white;
 }
 .todo_font {
     font-style:normal;
