@@ -1,16 +1,25 @@
+body {
+  margin: 0;
+}
+
 .hidden {
     display: none;
 }
-body {
-    background-color: #051320;
-    text-align: center;  
+
+
+.content {
+  height: 100%;
+  min-height: 1000px;
+  text-align: center;  
+  background: no-repeat center top/ 1024px url('../img/1.jpg') #000;
 }
 
 /*Class*/
 .clock {
 }
+
 #clock_block{
-  margin: 30px 0px 10px;
+  padding: 30px 0px 10px;
 }
 .title_font{
   font-weight: bolder;
