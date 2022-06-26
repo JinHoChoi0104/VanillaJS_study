@@ -22,13 +22,19 @@ body {
   margin-top: 20px;
 }
 
+.quote_wrap {
+  max-width: 600px;
+  padding: 0 20px;
+  margin: 20px auto 0;
+}
 .quote_area {
-  margin-top: 20px;
+  padding: 20px;
+  height: 72px;
+  background-color: rgba(72, 72, 72, 0.3);
   color: #fff;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  height: 72px;
 }
 
 #clock_block{
@@ -40,18 +46,18 @@ body {
   color: white;
 }
 .greeting {
-    margin: 10px;
-
+  margin: 10px;
 }
-.quotes {
 
+.quotes {
   font-weight: bolder;
   font-style:unset;
-    font-size: 100%;
-    color: white;
+  font-size: 100%;
+  color: white;
 }
 
 .todo_input {
+  margin-top: 20px;
   min-width: 200px;
   padding: 3px 5px;
   border: 1px solid rgba(92, 92, 92, 0.7);
