@@ -56,9 +56,15 @@ body {
   color: white;
 }
 
+
+.todo_area {
+  padding: 0 20px;
+  margin: 20px auto 0;
+  max-width: 500px;
+}
+
 .todo_input {
-  margin-top: 20px;
-  min-width: 200px;
+  width: 100%;
   padding: 3px 5px;
   border: 1px solid rgba(92, 92, 92, 0.7);
   background-color: rgba(72, 72, 72, 0.8);
