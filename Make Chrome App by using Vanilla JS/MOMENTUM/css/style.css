@@ -49,6 +49,22 @@ body {
   margin: 10px;
 }
 
+
+.button_login {
+  width: 80px;
+  border: 0;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: rgba(68, 64, 64, 0.9);
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  
+
+}
+
+
+
 .quotes {
   font-weight: bolder;
   font-style:unset;
