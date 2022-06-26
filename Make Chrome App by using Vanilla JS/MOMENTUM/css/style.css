@@ -37,6 +37,23 @@ body {
     font-size: 100%;
     color: white;
 }
+
+.todo_input {
+  min-width: 200px;
+  padding: 3px 5px;
+  border: 1px solid rgba(92, 92, 92, 0.7);
+  background-color: rgba(72, 72, 72, 0.8);
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.todo_input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .todo_font {
     font-style:normal;
     font-size: 100%;
