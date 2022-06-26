@@ -18,6 +18,19 @@ body {
 .clock {
 }
 
+.login_form {
+  margin-top: 20px;
+}
+
+.quote_area {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  height: 72px;
+}
+
 #clock_block{
   padding: 30px 0px 10px;
 }
